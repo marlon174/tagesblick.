@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <!-- Titelgrafik zum Start von tagesblick.: die Sonne geht auf -->
+  <defs>
+    <linearGradient id="himmel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1120"/>
+      <stop offset=".45" stop-color="#2b2f6e"/>
+      <stop offset=".78" stop-color="#b8456e"/>
+      <stop offset="1" stop-color="#ff8a4c"/>
+    </linearGradient>
+    <linearGradient id="wasser" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1f4d"/>
+      <stop offset="1" stop-color="#0b1120"/>
+    </linearGradient>
+    <radialGradient id="sonne" cx=".5" cy=".62" r=".6">
+      <stop offset="0" stop-color="#ffd36b"/>
+      <stop offset="1" stop-color="#ff8f3d"/>
+    </radialGradient>
+    <radialGradient id="schein" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffb35c" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ffb35c" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="ueber-dem-horizont"><rect width="1600" height="600"/></clipPath>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#himmel)"/>
+  <g fill="#ffffff">
+    <circle cx="180" cy="90" r="2.4" opacity=".7"/>
+    <circle cx="340" cy="190" r="1.8" opacity=".5"/>
+    <circle cx="520" cy="70" r="2" opacity=".6"/>
+    <circle cx="1080" cy="120" r="2.2" opacity=".6"/>
+    <circle cx="1260" cy="60" r="1.6" opacity=".5"/>
+    <circle cx="1440" cy="170" r="2.6" opacity=".7"/>
+    <circle cx="1350" cy="260" r="1.6" opacity=".4"/>
+    <circle cx="260" cy="300" r="1.6" opacity=".35"/>
+  </g>
+  <circle cx="800" cy="600" r="470" fill="url(#schein)" clip-path="url(#ueber-dem-horizont)"/>
+  <circle cx="800" cy="600" r="220" fill="url(#sonne)" clip-path="url(#ueber-dem-horizont)"/>
+
+  <rect y="600" width="1600" height="300" fill="url(#wasser)"/>
+  <g fill="#ffb347">
+    <rect x="570" y="626" width="460" height="12" rx="6" opacity=".9"/>
+    <rect x="630" y="664" width="340" height="12" rx="6" opacity=".7"/>
+    <rect x="690" y="702" width="220" height="12" rx="6" opacity=".52"/>
+    <rect x="740" y="740" width="120" height="12" rx="6" opacity=".36"/>
+    <rect x="780" y="778" width="40" height="12" rx="6" opacity=".24"/>
+  </g>
+</svg>
